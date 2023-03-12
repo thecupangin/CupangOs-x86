@@ -1,48 +1,38 @@
-#### 提醒
+#### remind
 
-- 默认密码：无
-- 二进制 golang：尽量不编译进小闪存设备
-- 上游为 openwrt 官方，原汁原味，一些 package 取自第三方
-- 内置一些 usb 无线 ac 网卡与千兆有线网卡，具体查看 config 文件夹
-- 如需添加特色 package，请 fork 后自行在如下文件中添加
+- Default password: none
+- The upstream is openwrt official, authentic, some packages are taken from third parties
+- Built-in some usb wireless ac network card and gigabit wired network card, check the config folder for details
+- If you need to add a special package, please add it in the following file after fork
     - scripts/01_customize_packages.sh
     - config/*
 
-#### 分支
+#### branch
 
-| 版本      |x86<br>x86/generic|NanoPi<br>R2C R2S ZeroPi|Phicomm<br>K3|Phicomm<br>K2P|
-|-----------|:-------------------:|:----------------------:|:------------:|:------------:|
-| 22.03.0   |       &check;       |        &check;         |    &check;   |   &check;    |
-| 21.02.3   |       &check;       |        &check;         |    &check;   |   &check;    |
+| Version   |x86<br>x86/generic|
+|-----------|:-------------------:|
+| 22.03.0   |       &check;       |
+| 21.02.3   |       &check;       |
 
-#### 第三方应用列表
+#### List of third-party applications
 
-| 应用        |x86<br>x86/generic|NanoPi<br>R2C/R2S/ZeroPi|Phicomm<br>K3|Phicomm<br>K2P|
-|-------------|:----------------:|:----------------------:|:-----------:|:------------:|
-|ADBYBY Plus +|      &check;     |        &check;         |   &check;   |              |
-| AutoCore    |      &check;     |        &check;         |   &check;   |              |
-| cpufreq     |                  |        &check;         |             |              |
-| DDNS        |      &check;     |        &check;         |   &check;   |              |
-| FullCone NAT|      &check;     |        &check;         |   &check;   |   &check;    |
-| OpenClash   |      &check;     |        &check;         |   &check;   |              |
-| Server 酱   |      &check;     |        &check;         |   &check;   |              |
-| SSRP+       |      &check;     |        &check;         |   &check;   |   &check;    |
-| usb 打印    |      &check;     |        &check;         |   &check;   |              |
-| vlmcsd 服务 |      &check;     |        &check;         |   &check;   |   &check;    |
-| Zerotier    |      &check;     |        &check;         |   &check;   |   &check;    |
-| 定时重启    |      &check;     |        &check;         |   &check;   |   &check;    |
-| 上网时间控制|      &check;     |        &check;         |   &check;   |   &check;    |
-| 释放内存    |      &check;     |        &check;         |   &check;   |   &check;    |
-| 迅雷快鸟    |      &check;     |        &check;         |   &check;   |              |
-| 网络共享    |      &check;     |        &check;         |   &check;   |              |
-| 文件传输    |      &check;     |        &check;         |   &check;   |              |
-| 自动挂载    |      &check;     |        &check;         |   &check;   |              |
+| application        |x86<br>x86/generic|
+|-------------|:----------------:|
+|ADBYBY Plus +|      &check;     |
+| AutoCore    |      &check;     |
+| cpufreq     |                  |
+| FullCone NAT|      &check;     |
+| OpenClash   |      &check;     |
+| Scheduled restart | &check; |
+| Internet time control | &check; |
+| free memory | &check; |
+| Automount | &check; |
 
 #### TODO
 
-- [ ] 考虑 opkg feeds，减少固件大小，如此可以按需安装
+- [ ] Consider opkg feeds, reduce firmware size so it can be installed on demand
 
-#### 感谢
+#### grateful
 
 - [![coolsnowwolf](https://img.shields.io/badge/Lede-Lean-orange.svg?style=flat&logo=appveyor)](https://github.com/coolsnowwolf/lede)
 - [![Lienol](https://img.shields.io/badge/OpenWrt-Lienol-orange.svg?style=flat&logo=appveyor)](https://github.com/Lienol/openwrt)
