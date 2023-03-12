@@ -4,14 +4,14 @@
 [[ ! -d package/new ]] && mkdir -p package/new
 
 # Access Control
-cp -rf ../immortalwrt-luci/applications/luci-app-accesscontrol package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-accesscontrol package/new/
 
 # ADBYBY Plus +
 svn export -q https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/new/luci-app-adbyby-plus
 cp -rf ../immortalwrt-packages/net/adbyby package/new/
 
 # arpbind
-cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
 
 # AutoCore
 cp -rf ../immortalwrt/package/emortal/autocore package/new/
@@ -67,13 +67,13 @@ rm -rf package/libs/mbedtls
 cp -rf ../immortalwrt/package/libs/mbedtls package/libs/
 
 # OLED
-svn export -q https://github.com/NateLol/luci-app-oled/trunk package/new/luci-app-oled
+#svn export -q https://github.com/NateLol/luci-app-oled/trunk package/new/luci-app-oled
 
 # OpenClash
 svn export -q https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/new/luci-app-openclash
 
-# Realtek R8125, RTL8152/8153, RTL8192EU
-cp -rf ../immortalwrt/package/kernel/{r8125,r8152,rtl8192eu} package/new/
+# Realtek R8125, RTL8152/8153, RTL8192EU, RTL8188EU, RTL8723BS
+cp -rf ../immortalwrt/package/kernel/{r8152,rtl8192eu,rtl8188eu,rtl8723bs} package/new/
 
 # Release Ram
 cp -rf ../immortalwrt-luci/applications/luci-app-ramfree package/new/
@@ -82,25 +82,25 @@ cp -rf ../immortalwrt-luci/applications/luci-app-ramfree package/new/
 cp -rf ../immortalwrt-luci/applications/luci-app-autoreboot package/new/
 
 # SeverChan
-svn export -q https://github.com/tty228/luci-app-serverchan/trunk package/new/luci-app-serverchan
+#svn export -q https://github.com/tty228/luci-app-serverchan/trunk package/new/luci-app-serverchan
 
 # ShadowsocksR Plus+
-svn export -q https://github.com/fw876/helloworld/trunk package/helloworld
-svn export -q https://github.com/coolsnowwolf/packages/trunk/net/shadowsocks-libev package/helloworld/shadowsocks-libev
-rm -rf ./feeds/packages/net/{xray-core,shadowsocks-libev}
+#svn export -q https://github.com/fw876/helloworld/trunk package/helloworld
+#svn export -q https://github.com/coolsnowwolf/packages/trunk/net/shadowsocks-libev package/helloworld/shadowsocks-libev
+#rm -rf ./feeds/packages/net/{xray-core,shadowsocks-libev}
 
 # USB Printer
-cp -rf ../immortalwrt-luci/applications/luci-app-usb-printer package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-usb-printer package/new/
 
 # vlmcsd
-cp -rf ../immortalwrt-luci/applications/luci-app-vlmcsd package/new/
-cp -rf ../immortalwrt-packages/net/vlmcsd package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-vlmcsd package/new/
+#cp -rf ../immortalwrt-packages/net/vlmcsd package/new/
 
 # xlnetacc
-cp -rf ../immortalwrt-luci/applications/luci-app-xlnetacc package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-xlnetacc package/new/
 
 # Zerotier
-cp -rf ../immortalwrt-luci/applications/luci-app-zerotier package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-zerotier package/new/
 
 # default settings and translation
 cp -rf ../default-settings package/new/
