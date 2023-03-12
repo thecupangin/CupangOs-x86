@@ -30,7 +30,7 @@ cp -rf ../lede/target/linux/generic/files-5.10 target/linux/generic/
 cp -rf ../immortalwrt-luci/applications/luci-app-cpufreq package/new/
 
 # DDNS
-cp -rf ../immortalwrt-packages/net/ddns-scripts_{aliyun,dnspod} package/new/
+#cp -rf ../immortalwrt-packages/net/ddns-scripts_{aliyun,dnspod} package/new/
 
 # dnsmasq: add filter aaa option
 cp -rf ../patches/910-add-filter-aaaa-option-support.patch package/network/services/dnsmasq/patches/
@@ -41,8 +41,8 @@ patch -d feeds/luci -p1 -i ../../../patches/filter-aaaa-luci.patch
 patch -p1 -i ../patches/dnsmasq-use-nft-ruleset-for-dns_redirect.patch
 
 # Filetransfer
-cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
-cp -rf ../immortalwrt-luci/libs/luci-lib-fs package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
+#cp -rf ../immortalwrt-luci/libs/luci-lib-fs package/new/
 
 # FullCone nat for nftables
 # patch kernel
