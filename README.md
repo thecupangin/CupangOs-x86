@@ -20,7 +20,6 @@
 |-------------|:----------------:|
 |ADBYBY Plus +|      &check;     |
 | AutoCore    |      &check;     |
-| cpufreq     |                  |
 | FullCone NAT|      &check;     |
 | OpenClash   |      &check;     |
 | Scheduled restart | &check; |
