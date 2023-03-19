@@ -11,7 +11,7 @@ svn export -q https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-a
 cp -rf ../immortalwrt-packages/net/adbyby package/new/
 
 # arpbind
-cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
 
 # AutoCore, cp from YAOF
 svn export -r 219750 -q https://github.com/immortalwrt/immortalwrt/branches/master/package/emortal/autocore package/new/autocore
@@ -27,17 +27,17 @@ patch -p1 -i ../patches/kernel-add-kmod-fs-ntfs3.patch
 cp -rf ../lede/target/linux/generic/files-5.10 target/linux/generic/
 
 # cpufreq
-cp -rf ../immortalwrt-luci/applications/luci-app-cpufreq package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-cpufreq package/new/
 
 # DDNS
-cp -rf ../immortalwrt-packages/net/ddns-scripts_{aliyun,dnspod} package/new/
+#cp -rf ../immortalwrt-packages/net/ddns-scripts_{aliyun,dnspod} package/new/
 
 # dnsmasq
 rm -rf package/network/services/dnsmasq
 cp -rf ../immortalwrt/package/network/services/dnsmasq package/network/services/
 
 # Filetransfer
-cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
 cp -rf ../immortalwrt-luci/libs/luci-lib-fs package/new/
 
 # FullCone nat for nftables
@@ -61,41 +61,14 @@ patch -d feeds/luci -p1 -i ../../../patches/fullconenat-luci.patch
 rm -rf package/libs/mbedtls
 cp -rf ../immortalwrt/package/libs/mbedtls package/libs/
 
-# OLED
-svn export -q https://github.com/NateLol/luci-app-oled/trunk package/new/luci-app-oled
-
 # OpenClash
-svn export -q https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/new/luci-app-openclash
+#svn export -q https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/new/luci-app-openclash
 
-# Realtek R8125, RTL8152/8153, RTL8192EU
-cp -rf ../immortalwrt/package/kernel/{r8125,r8152,rtl8192eu} package/new/
+# Realtek R8125, RTL8152/8153, RTL8192EU, RTL8188EU
+cp -rf ../immortalwrt/package/kernel/{r8125,r8152,rtl8192eu,rtl8188eu} package/new/
 
 # Release Ram
 cp -rf ../immortalwrt-luci/applications/luci-app-ramfree package/new/
-
-# Scheduled Reboot
-cp -rf ../immortalwrt-luci/applications/luci-app-autoreboot package/new/
-
-# SeverChan
-svn export -q https://github.com/tty228/luci-app-serverchan/trunk package/new/luci-app-serverchan
-
-# ShadowsocksR Plus+
-svn export -q https://github.com/fw876/helloworld/trunk package/helloworld
-svn export -q https://github.com/coolsnowwolf/packages/trunk/net/shadowsocks-libev package/helloworld/shadowsocks-libev
-rm -rf ./feeds/packages/net/{xray-core,shadowsocks-libev}
-
-# USB Printer
-cp -rf ../immortalwrt-luci/applications/luci-app-usb-printer package/new/
-
-# vlmcsd
-cp -rf ../immortalwrt-luci/applications/luci-app-vlmcsd package/new/
-cp -rf ../immortalwrt-packages/net/vlmcsd package/new/
-
-# xlnetacc
-cp -rf ../immortalwrt-luci/applications/luci-app-xlnetacc package/new/
-
-# Zerotier
-cp -rf ../immortalwrt-luci/applications/luci-app-zerotier package/new/
 
 # default settings and translation
 cp -rf ../default-settings package/new/
