@@ -4,7 +4,7 @@
 [[ ! -d package/new ]] && mkdir -p package/new
 
 # Access Control
-cp -rf ../immortalwrt-luci/applications/luci-app-accesscontrol package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-accesscontrol package/new/
 
 # ADBYBY Plus +
 svn export -q https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/new/luci-app-adbyby-plus
@@ -56,6 +56,9 @@ rm -rf package/network/config/firewall4
 cp -rf ../immortalwrt/package/network/config/firewall4 package/network/config/
 # patch luci
 patch -d feeds/luci -p1 -i ../../../patches/fullconenat-luci.patch
+# patch rtl8188eu
+svn export -q https://github.com/ivanovborislav/rtl8188eu package/new/rtl8188eu
+patch -p1 -i ../../../patches/rtl8188eu-rc2.patch
 
 # mbedtls
 rm -rf package/libs/mbedtls
