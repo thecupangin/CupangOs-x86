@@ -57,9 +57,7 @@ cp -rf ../immortalwrt/package/network/config/firewall4 package/network/config/
 # patch luci
 patch -d feeds/luci -p1 -i ../../../patches/fullconenat-luci.patch
 # patch rtl8188eu
-svn export -q https://github.com/ivanovborislav/rtl8188eu package/rtl8188eu
-wget https://raw.githubusercontent.com/ivanovborislav/document/main/patch/20230314-k-v6.3-rc2.patch
-patch -p1 < 20230314-k-v6.3-rc2.patch
+svn export -q https://github.com/thecupangin/rtl8188eu package/new/rtl8188eu
 
 # mbedtls
 rm -rf package/libs/mbedtls
