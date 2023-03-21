@@ -1,6 +1,6 @@
-diff -Naur /os_dep/linux/ioctl_cfg80211.c /os_dep/linux/ioctl_cfg80211.c
---- /os_dep/linux/ioctl_cfg80211.c	2023-03-14 09:53:54.692356980 +0200
-+++ /os_dep/linux/ioctl_cfg80211.c	2023-03-14 09:58:52.723391864 +0200
+diff -Naur package/rtl8188eu/os_dep/linux/ioctl_cfg80211.c /os_dep/linux/ioctl_cfg80211.c
+--- package/rtl8188eu/os_dep/linux/ioctl_cfg80211.c	2023-03-14 09:53:54.692356980 +0200
++++ package/rtl8188eu/os_dep/linux/ioctl_cfg80211.c	2023-03-14 09:58:52.723391864 +0200
 @@ -455,7 +455,9 @@
  #if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 19, 0))
  	if (started) {
