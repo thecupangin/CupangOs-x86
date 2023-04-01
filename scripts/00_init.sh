@@ -12,8 +12,8 @@ __get_other-repos() {
     git clone -b master --single-branch https://github.com/immortalwrt/immortalwrt immortalwrt
     git clone -b master --depth 1 --single-branch https://github.com/immortalwrt/packages immortalwrt-packages
     git clone -b master --single-branch https://github.com/immortalwrt/luci immortalwrt-luci
-    git clone -b master --depth 1 --single-branch https://github.com/lrdrdn/my-opkg-repo/generic lrdrdn-generic
-    git clone -b master --depth 1 --single-branch https://github.com/lrdrdn/my-opkg-repo/i386_pentium4 lrdrdn-i386_pentium4
+    git clone -b master --depth 1 --single-branch https://github.com/lrdrdn/my-opkg-repo/tree/main/generic lrdrdn-generic
+    git clone -b master --depth 1 --single-branch https://github.com/lrdrdn/my-opkg-repo/tree/main/i386_pentium4 lrdrdn-i386_pentium4
     pushd immortalwrt-luci
     git reset --hard cecb675
     popd
