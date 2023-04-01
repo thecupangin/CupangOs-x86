@@ -34,7 +34,7 @@ cp -rf ../lede/target/linux/generic/files-5.10 target/linux/generic/
 
 # dnsmasq
 rm -rf package/network/services/dnsmasq
-cp -rf ../immortalwrt/package/network/services/dnsmasq package/network/services/
+#cp -rf ../immortalwrt/package/network/services/dnsmasq package/network/services/
 
 # Filetransfer
 #cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
