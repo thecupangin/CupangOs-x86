@@ -7,8 +7,8 @@
 #cp -rf ../immortalwrt-luci/applications/luci-app-accesscontrol package/new/
 
 # ADBYBY Plus +
-svn export -q https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/new/luci-app-adbyby-plus
-cp -rf ../immortalwrt-packages/net/adbyby package/new/
+#svn export -q https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-adbyby-plus package/new/luci-app-adbyby-plus
+#cp -rf ../immortalwrt-packages/net/adbyby package/new/
 
 # arpbind
 #cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
@@ -33,7 +33,7 @@ cp -rf ../lede/target/linux/generic/files-5.10 target/linux/generic/
 #cp -rf ../immortalwrt-packages/net/ddns-scripts_{aliyun,dnspod} package/new/
 
 # dnsmasq
-rm -rf package/network/services/dnsmasq
+#rm -rf package/network/services/dnsmasq
 #cp -rf ../immortalwrt/package/network/services/dnsmasq package/network/services/
 
 # Filetransfer
