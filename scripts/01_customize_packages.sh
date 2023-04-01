@@ -11,7 +11,7 @@ svn export -q https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-a
 cp -rf ../immortalwrt-packages/net/adbyby package/new/
 
 # arpbind
-cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-arpbind package/new/
 
 # AutoCore
 cp -rf ../autocore package/new/
@@ -33,8 +33,8 @@ patch -p1 -i ../patches/dnsmasq-add-filter-aaaa-option.patch
 patch -d feeds/luci -p1 -i ../../../patches/filter-aaaa-luci.patch
 
 # Filetransfer
-cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
-cp -rf ../immortalwrt-luci/libs/luci-lib-fs package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-filetransfer package/new/
+#cp -rf ../immortalwrt-luci/libs/luci-lib-fs package/new/
 
 # FullCone
 cp -rf ../immortalwrt/package/network/utils/fullconenat package/network/utils
@@ -47,10 +47,10 @@ cp -f ../immortalwrt/package/libs/mbedtls/patches/100-Implements-AES-and-GCM-wit
 cp -f ../patches/201-Camellia-block-cipher.patch package/libs/mbedtls/patches/
 
 # OLED
-svn export -q https://github.com/NateLol/luci-app-oled/trunk package/new/luci-app-oled
+#svn export -q https://github.com/NateLol/luci-app-oled/trunk package/new/luci-app-oled
 
 # OpenClash
-svn export -q https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/new/luci-app-openclash
+#svn export -q https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/new/luci-app-openclash
 # add kmod-inet-diag package
 curl -sSL https://github.com/openwrt/openwrt/commit/efc8aff.patch | patch -p1
 
@@ -64,7 +64,7 @@ cp -rf ../immortalwrt-luci/applications/luci-app-ramfree package/new/
 cp -rf ../immortalwrt-luci/applications/luci-app-autoreboot package/new/
 
 # SeverChan
-svn export -q https://github.com/tty228/luci-app-serverchan/trunk package/new/luci-app-serverchan
+# svn export -q https://github.com/tty228/luci-app-serverchan/trunk package/new/luci-app-serverchan
 
 # ShadowsocksR Plus+
 svn export -q https://github.com/fw876/helloworld/trunk package/helloworld
@@ -77,18 +77,18 @@ svn export -q https://github.com/openwrt/packages/branches/openwrt-22.03/lang/go
 patch -d package/helloworld -p1 -i ../../../patches/building-ssr-libev-with-libmbedtls.patch
 
 # Traffic Usage Monitor
-svn export -q https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/new/wrtbwmon
-svn export -q https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/new/luci-app-wrtbwmon
+#svn export -q https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/new/wrtbwmon
+#svn export -q https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/new/luci-app-wrtbwmon
 
 # USB Printer
-cp -rf ../immortalwrt-luci/applications/luci-app-usb-printer package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-usb-printer package/new/
 
 # vlmcsd
-cp -rf ../immortalwrt-luci/applications/luci-app-vlmcsd package/new/
-cp -rf ../immortalwrt-packages/net/vlmcsd package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-vlmcsd package/new/
+#cp -rf ../immortalwrt-packages/net/vlmcsd package/new/
 
 # xlnetacc
-cp -rf ../immortalwrt-luci/applications/luci-app-xlnetacc package/new/
+#cp -rf ../immortalwrt-luci/applications/luci-app-xlnetacc package/new/
 
 # Zerotier
 cp -rf ../immortalwrt-luci/applications/luci-app-zerotier package/new/
