@@ -46,7 +46,7 @@ define Package/default-settings
 		+odhcp6c \
 		+odhcpd-ipv6only \
 		+zram-swap \
-		+@LUCI_LANG_zh_Hans
+		+@LUCI_LANG_en
 endef
 
 define Build/Compile
