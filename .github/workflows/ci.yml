@@ -2,8 +2,8 @@ name: Build OpenWrt
 
 on:
   workflow_dispatch:
-    schedule:
-    - cron: "00 00 */6 * *"
+    #schedule:
+    #- cron: "00 00 */6 * *"
     inputs:
       branch:
         description: 'your local repo branch'
